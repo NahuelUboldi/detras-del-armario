@@ -1,13 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Modal from '../components/Modal';
 import Alert from '../components/Alert';
 
 function Form() {
-  let navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isAlertOpen, setIsAlertOpen] = useState(true);
+  const [isAlertOpen, setIsAlertOpen] = useState(false);
   const [nombre, setNombre] = useState('');
   const [nombreGustaba, setNombreGustaba] = useState('');
   const [banda, setBanda] = useState('');
@@ -41,16 +39,14 @@ function Form() {
         maestra,
       };
     });
-    console.log(data);
-    localStorage.setItem('data', JSON.stringify(data));
-    setNombre('');
-    setNombreGustaba('');
-    setBanda('');
-    setCompañerita('');
-    setMejorAmigo('');
-    setMaestra('');
+
+
   };
 
+  useEffect(() => {
+    localStorage.setItem('data', JSON.stringify(data));
+  }, [data])
+  
   useEffect(() => {
     setTimeout(() => {
       setIsAlertOpen(false);

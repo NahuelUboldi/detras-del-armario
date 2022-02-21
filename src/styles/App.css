@@ -30,3 +30,7 @@
   background-color: aliceblue;
   border-radius: 1rem;
 }
+/*form*/
+.form-group {
+  margin-bottom: 1rem;
+}
