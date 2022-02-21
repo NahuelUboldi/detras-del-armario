@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import Modal from '../components/Modal';
 import Alert from '../components/Alert';
 
+import { useNavigate } from 'react-router-dom';
+
 function Form() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAlertOpen, setIsAlertOpen] = useState(false);
@@ -13,6 +15,8 @@ function Form() {
   const [mejorAmigo, setMejorAmigo] = useState('');
   const [maestra, setMaestra] = useState('');
   const [data, setData] = useState({});
+
+  let navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,14 +43,15 @@ function Form() {
         maestra,
       };
     });
-
-
+    setTimeout(() => {
+      return () => navigate('/story');
+    }, 3000);
   };
 
   useEffect(() => {
     localStorage.setItem('data', JSON.stringify(data));
-  }, [data])
-  
+  }, [data]);
+
   useEffect(() => {
     setTimeout(() => {
       setIsAlertOpen(false);
