@@ -1,0 +1,32 @@
+/*MODAL*/
+.modalBg {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all ease 1s;
+}
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  width: 30rem;
+  max-width: 100%;
+  height: 30rem;
+  max-height: 100%;
+  border: 1px aliceblue;
+  background-color: aliceblue;
+  border-radius: 1rem;
+}
