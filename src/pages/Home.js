@@ -5,9 +5,7 @@ function Home() {
   let navigate = useNavigate();
   return (
     <>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
+
             <h1 className='display-1'>Bienvenidos</h1>
             <p className='lead'>
               El período de aislamiento por pandemia ha generado un olvido del
@@ -23,9 +21,7 @@ function Home() {
             >
               Sí, quero participar
             </button>
-          </div>
-        </div>
-      </div>
+
     </>
   );
 }

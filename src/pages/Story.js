@@ -17,9 +17,7 @@ function Story() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12'>
+
             <ul>
               <li>Nombre: {data.nombre}</li>
               <li>Nombre gustaba: {data.nombreGustaba}</li>
@@ -28,6 +26,7 @@ function Story() {
               <li>Mejor Amigo: {data.mejorAmigo}</li>
               <li>Maestra: {data.maestra}</li>
             </ul>
+            <h1 className="h1">Detrás del Armario</h1>
             <p>
               Era un armario blanco de metal pesado, tipo gabinete, que siempre
               estaba cerrado con llave. De todos modos, lo que contenía adentro
@@ -209,9 +208,7 @@ function Story() {
               pared.
             </p>
             <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>Finalizar Experimento</button>
-          </div>
-        </div>
-      </div>
+ 
       {isModalOpen ? (
         <Modal title={"Experimento terminado"} text={"El recuerdo ha sido implantado con éxito."} lastModal={true} />
       ) : null}

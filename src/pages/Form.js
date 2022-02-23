@@ -66,9 +66,6 @@ function Form() {
 
   return (
     <>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
             <p className='lead'>
               Necesitamos que rellenes este formulario con algunos datos de tu
               niñez
@@ -175,9 +172,7 @@ function Form() {
               objetivo es dotar de dinamismo e interactividad al cuento que
               podrán leer a continuación.
             </p>
-          </div>
-        </div>
-      </div>
+
       {isModalOpen ? (
         <Modal title={"Advertencia"} text={"Nuevos recuerdos de tu niñez te serán implantados"} />
       ) : null}

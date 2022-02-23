@@ -1,6 +1,45 @@
 @import-normalize;
+
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Oswald:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Cormorant+Garamond&display=swap');
+:root {
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'Poiret One', cursive;
+  --font-headings: 'Fredericka the Great', cursive;
+  --font-lora: 'Lora', serif;
+  --font-cardo: 'Cardo', 'Cormorant Garamond', serif;
+ --font-oswald: 'Oswald', sans-serif;
+ --font-alegreya:'Alegreya', serif;
+ --color-bg: #fff;
+ --color-black: #444444; 
+ --color-primary: #BCE4E3;
+ --color-purple:#B9B2DC;
+
+}
+body {
+  background-color: var(--color-purple);
+ color: var(--color-black);
+  font-family: var(--font-cardo);
+ font-weight: 400;
+ padding: 3rem;
+
+
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-cardo);
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+/* LAYOUT */
 .container {
-  outline: solid 1px red;
+  background-color: var(--color-bg);
+min-height: calc(100vh - 6rem);
 }
 
 /*MODAL*/

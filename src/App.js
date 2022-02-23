@@ -10,12 +10,15 @@ import ErrorPage from './pages/ErrorPage';
 function App() {
   return (
     <Router>
-      <nav>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-12 text-center p-3 p-md-5'>
+      {/* <nav>
         <Link to='/'>Home</Link>
         <Link to='/form'>form</Link>
         <Link to='/story'>Story</Link>
         <Link to='/finish'>Finish</Link>
-      </nav>
+      </nav> */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
@@ -24,6 +27,9 @@ function App() {
         <Route path='/finish' element={<Finish />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
+          </div>
+        </div>
+      </div>
     </Router>
   );
 }
