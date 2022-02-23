@@ -66,13 +66,14 @@ function Form() {
 
   return (
     <>
+    <h1 className='display-1'>Preparación del experimento</h1>
             <p className='lead'>
               Necesitamos que rellenes este formulario con algunos datos de tu
               niñez
             </p>
-            {isAlertOpen && <Alert />}
-            <form>
-              <div className='form-group'>
+            
+            <form className=' px-1 px-sm-2 px-md-3 px-lg-5'>
+              <div className='form-group mt-3 mt-md-5 '>
                 <label htmlFor='nombre'>Tu nombre:</label>
                 <input
                   type='text'
@@ -81,7 +82,7 @@ function Form() {
                   name='nombre'
                   value={nombre}
                   onChange={(e) => setNombre(e.target.value)}
-                  placeholder='Ingresa tu nombre de pila o apodo'
+                 
                 />
               </div>
               <div className='form-group'>
@@ -95,7 +96,7 @@ function Form() {
                   name='nombreGustaba'
                   value={nombreGustaba}
                   onChange={(e) => setNombreGustaba(e.target.value)}
-                  placeholder='Ingresa el nombre o apodo de la persona que te gustaba de niño'
+                  
                 />
               </div>
               <div className='form-group'>
@@ -110,7 +111,7 @@ function Form() {
                   name='banda'
                   value={banda}
                   onChange={(e) => setBanda(e.target.value)}
-                  placeholder='Ingresa el nombre de una banda musical'
+                 
                 />
               </div>
               <div className='form-group'>
@@ -124,7 +125,7 @@ function Form() {
                   name='compañerita'
                   value={compañerita}
                   onChange={(e) => setCompañerita(e.target.value)}
-                  placeholder='Ingresa el nombre de una compañerita de la escuela de aire aristocrático'
+                  
                 />
               </div>
               <div className='form-group'>
@@ -138,7 +139,7 @@ function Form() {
                   name='mejorAmigo'
                   value={mejorAmigo}
                   onChange={(e) => setMejorAmigo(e.target.value)}
-                  placeholder='Ingresa el nombre de tu mejor amigo'
+                 
                 />
               </div>
               <div className='form-group'>
@@ -152,18 +153,19 @@ function Form() {
                   name='maestra'
                   value={maestra}
                   onChange={(e) => setMaestra(e.target.value)}
-                  placeholder='Ingresa el nombre de tu maestra'
+                  
                 />
               </div>
+              {isAlertOpen && <Alert />}
               <button
                 type='submit'
-                className='btn btn-primary'
+                className='btn btn-primary fs-4 my-3 my-md-5'
                 onClick={handleSubmit}
               >
-                Quiero continuar con el experimento
+                Continuar con el experimento
               </button>
             </form>
-            <p className='fst-italic text-secondary'>
+            <p className='fst-italic text-secondary mt-3 mt-md-5'>
               *AVISO: Los datos ingresados en este formulario son solamente
               accesibles por el usuario que los ingresa, ya que se almacenan
               localmente y por un tiempo limitado en la sesión particular del

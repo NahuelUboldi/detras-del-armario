@@ -16,7 +16,7 @@ function Home() {
             </p>
             <p className='lead'>¿Te animás a participar?</p>
             <button
-              className='btn btn-block btn-primary'
+              className='btn btn-primary fs-4 my-3 my-md-5'
               onClick={() => navigate('/form')}
             >
               Sí, quero participar

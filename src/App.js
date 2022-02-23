@@ -6,6 +6,8 @@ import Form from './pages/Form';
 import Story from './pages/Story';
 import Finish from './pages/Finish';
 import ErrorPage from './pages/ErrorPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,20 +15,24 @@ function App() {
       <div className='container'>
         <div className='row'>
           <div className='col-12 text-center p-3 p-md-5'>
-      {/* <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/form'>form</Link>
-        <Link to='/story'>Story</Link>
-        <Link to='/finish'>Finish</Link>
-      </nav> */}
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/form' element={<Form />} />
-        <Route path='/story' element={<Story />} />
-        <Route path='/finish' element={<Finish />} />
-        <Route path='*' element={<ErrorPage />} />
-      </Routes>
+            <Header />
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-12 text-center p-3 p-md-5'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/home' element={<Home />} />
+              <Route path='/form' element={<Form />} />
+              <Route path='/story' element={<Story />} />
+              <Route path='/finish' element={<Finish />} />
+              <Route path='*' element={<ErrorPage />} />
+            </Routes>
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-12 text-center p-3 p-md-5'>
+            <Footer />
           </div>
         </div>
       </div>

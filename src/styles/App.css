@@ -17,8 +17,11 @@
  --font-alegreya:'Alegreya', serif;
  --color-bg: #fff;
  --color-black: #444444; 
+ --color-light-black: #888; 
  --color-primary: #BCE4E3;
+ --color-purple-light:#e4e2f0;
  --color-purple:#B9B2DC;
+ --color-purple-dark:#9f95d1;
 
 }
 body {
@@ -27,19 +30,65 @@ body {
   font-family: var(--font-cardo);
  font-weight: 400;
  padding: 3rem;
-
-
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--font-cardo);
   font-weight: 400;
   color: var(--color-black);
 }
+body a {
+  text-decoration: none;
+}
+/* CUSTOM BOOTSTRAP */
+.btn {
+  border: none;
+  outline: none;
+  box-shadow: none;
 
+}
+.btn-primary {
+  background-color: var(--color-purple);
+}
+.btn-primary:hover {
+  background-color: var(--color-purple-dark);
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  background-color: var(--color-purple-dark);
+}
+.form-control {
+  border:none;
+  background-color: var(--color-purple);
+  transition: all ease 0.5s;
+  text-align: center;
+}
+.form-control:focus {
+  border:none;
+  background-color: var(--color-purple-light);
+  box-shadow: none;
+}
+label {
+  color: var(--color-purple-dark);
+  font-size: 1.2rem;
+}
 /* LAYOUT */
 .container {
   background-color: var(--color-bg);
 min-height: calc(100vh - 6rem);
+}
+/*USEFULL CLASES*/
+.text-light-black {
+  color: var(--color-light-black);
+}
+.text-color-primary {
+  color: var(--color-purple);
+}
+a.social-media-icon {
+  color: var(--color-black);
+  transition: all ease 1s;
+}
+.social-media-icon:hover {
+  color: var(--color-purple);
+  transform: scale(1.2);
 }
 
 /*MODAL*/
