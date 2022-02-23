@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Modal from '../components/Modal';
 
 // const [name, setName] = useState(() => {
 //   // getting stored value
@@ -13,8 +14,7 @@ function Story() {
     const parsedData = JSON.parse(savedData);
     return parsedData || 'not data found';
   });
-  console.log(data);
-
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <>
       <div className='container'>
@@ -208,9 +208,13 @@ function Story() {
               {data.maestra} nos hizo entrar al aula y arrimar el armario a la
               pared.
             </p>
+            <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>Finalizar Experimento</button>
           </div>
         </div>
       </div>
+      {isModalOpen ? (
+        <Modal title={"Experimento terminado"} text={"El recuerdo ha sido implantado con éxito."} lastModal={true} />
+      ) : null}
     </>
   );
 }

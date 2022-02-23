@@ -43,9 +43,7 @@ function Form() {
         maestra,
       };
     });
-    setTimeout(() => {
-      return () => navigate('/story');
-    }, 3000);
+
   };
 
   useEffect(() => {
@@ -57,6 +55,14 @@ function Form() {
       setIsAlertOpen(false);
     }, 2000);
   }, [isAlertOpen]);
+  useEffect(() => {
+    if(isModalOpen) {
+      setTimeout(() => {
+        navigate('/story');
+      }, 3000);
+    }
+  }, [isModalOpen])
+
 
   return (
     <>
@@ -173,7 +179,7 @@ function Form() {
         </div>
       </div>
       {isModalOpen ? (
-        <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        <Modal title={"Advertencia"} text={"Nuevos recuerdos de tu niñez te serán implantados"} />
       ) : null}
     </>
   );

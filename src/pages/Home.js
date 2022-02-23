@@ -11,7 +11,7 @@ function Home() {
             <h1 className='display-1'>Bienvenidos</h1>
             <p className='lead'>
               El período de aislamiento por pandemia ha generado un olvido del
-              contacto físico.{' '}
+              contacto físico.
             </p>
             <p className='lead'>
               Por eso, hemos creado este experimento de recuerdo colectivo.
