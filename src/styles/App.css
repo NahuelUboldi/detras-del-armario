@@ -127,3 +127,17 @@ a.social-media-icon {
 .form-group {
   margin-bottom: 1rem;
 }
+
+/* STORY CONTAINER */
+.story-container {
+  text-align: left;
+}
+.author {
+  color: var(--color-purple);
+}
+.chapter {
+  height: 0.5rem;
+  width: 20%;
+min-width: 5rem;
+background-color: var(--color-purple)
+}
