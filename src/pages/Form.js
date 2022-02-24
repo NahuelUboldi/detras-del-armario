@@ -53,13 +53,13 @@ function Form() {
   useEffect(() => {
     setTimeout(() => {
       setIsAlertOpen(false);
-    }, 2000);
+    }, 4000);
   }, [isAlertOpen]);
   useEffect(() => {
     if(isModalOpen) {
       setTimeout(() => {
         navigate('/story');
-      }, 3000);
+      }, 5000);
     }
   }, [isModalOpen])
 

@@ -95,34 +95,35 @@ a.social-media-icon {
 .modalBg {
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: antiquewhite;
+  background-color: var(--color-purple);
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   transition: all ease 1s;
+  z-index: 20;
 }
-.modalContainer {
+/* .modalContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
   align-items: center;
-  width: 30rem;
+  width: 50rem;
   max-width: 100%;
-  height: 30rem;
+  height: 50rem;
   max-height: 100%;
-  border: 1px aliceblue;
-  background-color: aliceblue;
+
   border-radius: 1rem;
-}
+} */
 /*form*/
 .form-group {
   margin-bottom: 1rem;

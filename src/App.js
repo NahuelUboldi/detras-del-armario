@@ -8,6 +8,7 @@ import Finish from './pages/Finish';
 import ErrorPage from './pages/ErrorPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollToTop from './utilities/ScrollToTop';
 
 function App() {
   return (
@@ -20,14 +21,16 @@ function App() {
         </div>
         <div className='row'>
           <div className='col-12 text-center p-3 p-md-5'>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/home' element={<Home />} />
-              <Route path='/form' element={<Form />} />
-              <Route path='/story' element={<Story />} />
-              <Route path='/finish' element={<Finish />} />
-              <Route path='*' element={<ErrorPage />} />
-            </Routes>
+            <ScrollToTop>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/home' element={<Home />} />
+                <Route path='/form' element={<Form />} />
+                <Route path='/story' element={<Story />} />
+                <Route path='/finish' element={<Finish />} />
+                <Route path='*' element={<ErrorPage />} />
+              </Routes>
+            </ScrollToTop>
           </div>
         </div>
         <div className='row'>

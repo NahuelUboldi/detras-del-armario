@@ -1,19 +1,20 @@
 import React from 'react';
 import '../styles/App.css';
+import { Link } from 'react-router-dom';
 
 function Modal({title,text,lastModal}) {
 
   return (
     <>
       <div className='modalBg'>
-        <div className='modalContainer text-center'>
-          <p className='h1'>{title}</p>
+        
+          <p className='display-4'>{title}</p>
           <p className='lead'>
             {text}
           </p>
-          {lastModal && "volver | imprimir"}
+          {lastModal && <Link to="/home">Volver a empezar</Link>}
         </div>
-      </div>
+      
     </>
   );
 }
