@@ -1,45 +1,32 @@
 import React from 'react';
 import './styles/App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import {Routes, Route, useLocation} from 'react-router-dom';
+import {AnimatePresence} from "framer-motion"
+
+//components
 import Home from './pages/Home';
 import Form from './pages/Form';
 import Story from './pages/Story';
 import Finish from './pages/Finish';
 import ErrorPage from './pages/ErrorPage';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import ScrollToTop from './utilities/ScrollToTop';
 
-function App() {
+const App = () => {
+  const location = useLocation()
+
   return (
-    <Router>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center p-3 p-md-5'>
-            <Header />
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-12 text-center p-3 p-md-5'>
-            <ScrollToTop>
-              <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/home' element={<Home />} />
-                <Route path='/form' element={<Form />} />
-                <Route path='/story' element={<Story />} />
-                <Route path='/finish' element={<Finish />} />
-                <Route path='*' element={<ErrorPage />} />
-              </Routes>
-            </ScrollToTop>
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-12 text-center p-3 p-md-5'>
-            <Footer />
-          </div>
-        </div>
-      </div>
-    </Router>
+    <ScrollToTop>
+      <AnimatePresence exitBeforeEnter inital={"false"} >
+        <Routes key={location.pathname} location={location} >
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/form' element={<Form />} />
+          <Route path='/story' element={<Story />} />
+          <Route path='/finish' element={<Finish />} />
+          <Route path='*' element={<ErrorPage />} />
+        </Routes>
+      </AnimatePresence>
+    </ScrollToTop>
   );
 }
 

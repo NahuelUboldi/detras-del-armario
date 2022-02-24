@@ -4,6 +4,8 @@ import Modal from '../components/Modal';
 import Alert from '../components/Alert';
 
 import { useNavigate } from 'react-router-dom';
+import { AnimatedPage } from '../utilities/AnimatedPage';
+import Wrapper from '../components/Wrapper';
 
 function Form() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -65,120 +67,122 @@ function Form() {
 
 
   return (
-    <>
-    <h1 className='display-1'>Preparación del experimento</h1>
-            <p className='lead'>
-              Necesitamos que rellenes este formulario con algunos datos de tu
-              niñez
-            </p>
-            
-            <form className=' px-1 px-sm-2 px-md-3 px-lg-5'>
-              <div className='form-group mt-3 mt-md-5 '>
-                <label htmlFor='nombre'>Tu nombre:</label>
-                <input
-                  type='text'
-                  className='form-control'
-                  id='nombre'
-                  name='nombre'
-                  value={nombre}
-                  onChange={(e) => setNombre(e.target.value)}
-                 
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='nombreGustaba'>
-                  Nombre de la persona que te gustaba a los 12 años:
-                </label>
-                <input
-                  type='text'
-                  className='form-control'
-                  id='nombreGustaba'
-                  name='nombreGustaba'
-                  value={nombreGustaba}
-                  onChange={(e) => setNombreGustaba(e.target.value)}
-                  
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='banda'>
-                  Banda musical o cantante ridículo/a que te gustaba en la
-                  pre-adolescencia:
-                </label>
-                <input
-                  type='text'
-                  className='form-control'
-                  id='banda'
-                  name='banda'
-                  value={banda}
-                  onChange={(e) => setBanda(e.target.value)}
-                 
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='compañerita'>
-                  Nombre de una compañerita de aire aristocrático:
-                </label>
-                <input
-                  type='text'
-                  className='form-control'
-                  id='compañerita'
-                  name='compañerita'
-                  value={compañerita}
-                  onChange={(e) => setCompañerita(e.target.value)}
-                  
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='mejorAmigo'>
-                  Nombre de tu mejor amigo/a cuando tenías 12 años:
-                </label>
-                <input
-                  type='text'
-                  className='form-control'
-                  id='mejorAmigo'
-                  name='mejorAmigo'
-                  value={mejorAmigo}
-                  onChange={(e) => setMejorAmigo(e.target.value)}
-                 
-                />
-              </div>
-              <div className='form-group'>
-                <label htmlFor='maestra'>
-                  Una maestra que no te caía muy bien:
-                </label>
-                <input
-                  type='text'
-                  className='form-control'
-                  id='maestra'
-                  name='maestra'
-                  value={maestra}
-                  onChange={(e) => setMaestra(e.target.value)}
-                  
-                />
-              </div>
-              {isAlertOpen && <Alert />}
-              <button
-                type='submit'
-                className='btn btn-primary fs-4 my-3 my-md-5'
-                onClick={handleSubmit}
-              >
-                Continuar con el experimento
-              </button>
-            </form>
-            <p className='fst-italic text-secondary mt-3 mt-md-5'>
-              *AVISO: Los datos ingresados en este formulario son solamente
-              accesibles por el usuario que los ingresa, ya que se almacenan
-              localmente y por un tiempo limitado en la sesión particular del
-              navegador. Esto significa que los datos no son incorporados a
-              ninguna base de datos ni tienen un uso posterior. El único
-              objetivo es dotar de dinamismo e interactividad al cuento que
-              podrán leer a continuación.
-            </p>
+    <AnimatedPage>
+      <Wrapper>
+        <h1 className='display-1'>Preparación del experimento</h1>
+          <p className='lead'>
+            Necesitamos que rellenes este formulario con algunos datos de tu
+            niñez
+          </p>
+          
+          <form className=' px-1 px-sm-2 px-md-3 px-lg-5'>
+            <div className='form-group mt-3 mt-md-5 '>
+              <label htmlFor='nombre'>Tu nombre:</label>
+              <input
+                type='text'
+                className='form-control'
+                id='nombre'
+                name='nombre'
+                value={nombre}
+                onChange={(e) => setNombre(e.target.value)}
+                
+              />
+            </div>
+            <div className='form-group'>
+              <label htmlFor='nombreGustaba'>
+                Nombre de la persona que te gustaba a los 12 años:
+              </label>
+              <input
+                type='text'
+                className='form-control'
+                id='nombreGustaba'
+                name='nombreGustaba'
+                value={nombreGustaba}
+                onChange={(e) => setNombreGustaba(e.target.value)}
+                
+              />
+            </div>
+            <div className='form-group'>
+              <label htmlFor='banda'>
+                Banda musical o cantante ridículo/a que te gustaba en la
+                pre-adolescencia:
+              </label>
+              <input
+                type='text'
+                className='form-control'
+                id='banda'
+                name='banda'
+                value={banda}
+                onChange={(e) => setBanda(e.target.value)}
+                
+              />
+            </div>
+            <div className='form-group'>
+              <label htmlFor='compañerita'>
+                Nombre de una compañerita de aire aristocrático:
+              </label>
+              <input
+                type='text'
+                className='form-control'
+                id='compañerita'
+                name='compañerita'
+                value={compañerita}
+                onChange={(e) => setCompañerita(e.target.value)}
+                
+              />
+            </div>
+            <div className='form-group'>
+              <label htmlFor='mejorAmigo'>
+                Nombre de tu mejor amigo/a cuando tenías 12 años:
+              </label>
+              <input
+                type='text'
+                className='form-control'
+                id='mejorAmigo'
+                name='mejorAmigo'
+                value={mejorAmigo}
+                onChange={(e) => setMejorAmigo(e.target.value)}
+                
+              />
+            </div>
+            <div className='form-group'>
+              <label htmlFor='maestra'>
+                Una maestra que no te caía muy bien:
+              </label>
+              <input
+                type='text'
+                className='form-control'
+                id='maestra'
+                name='maestra'
+                value={maestra}
+                onChange={(e) => setMaestra(e.target.value)}
+                
+              />
+            </div>
+            {isAlertOpen && <Alert />}
+            <button
+              type='submit'
+              className='btn btn-primary fs-4 my-3 my-md-5'
+              onClick={handleSubmit}
+            >
+              Continuar con el experimento
+            </button>
+          </form>
+          <p className='fst-italic text-secondary mt-3 mt-md-5'>
+            *AVISO: Los datos ingresados en este formulario son solamente
+            accesibles por el usuario que los ingresa, ya que se almacenan
+            localmente y por un tiempo limitado en la sesión particular del
+            navegador. Esto significa que los datos no son incorporados a
+            ninguna base de datos ni tienen un uso posterior. El único
+            objetivo es dotar de dinamismo e interactividad al cuento que
+            podrán leer a continuación.
+          </p>
 
-      {isModalOpen ? (
-        <Modal title={"Advertencia"} text={"Nuevos recuerdos de tu niñez te serán implantados"} />
-      ) : null}
-    </>
+        {isModalOpen ? (
+          <Modal title={"Advertencia"} text={"Nuevos recuerdos de tu niñez te serán implantados"} />
+        ) : null}
+      </Wrapper>
+    </AnimatedPage>
   );
 }
 
