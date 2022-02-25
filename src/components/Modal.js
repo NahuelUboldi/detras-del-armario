@@ -9,7 +9,7 @@ const animations = {
  exit: {opacity:0,scale:0.8},
 }
 
-function Modal({title,text,lastModal}) {
+function Modal({title,text,lastModal,handlePrint}) {
 
   return (
     <>
@@ -26,7 +26,12 @@ function Modal({title,text,lastModal}) {
           <p className='lead'>
             {text}
           </p>
-          {lastModal && <Link to="/home">Volver a empezar</Link>}
+          {lastModal && 
+          <div class="btn-group" role="group">
+            <button className="btn btn-primary fs-4 my-3 my-md-5 mx-1"><a href="/home">Volver a empezar</a></button>
+            <button className="btn btn-primary fs-4 my-3 my-md-5 mx-1"><a href="/story">Leer de nuevo</a></button>
+            <button className="btn btn-primary fs-4 my-3 my-md-5 mx-1" onClick={handlePrint}>Imprimir</button>
+          </div>}
         </motion.div>
       
     </>
