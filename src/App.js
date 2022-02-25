@@ -7,8 +7,8 @@ import {AnimatePresence} from "framer-motion"
 import Home from './pages/Home';
 import Form from './pages/Form';
 import Story from './pages/Story';
-import Finish from './pages/Finish';
 import ErrorPage from './pages/ErrorPage';
+import Bio from './pages/Bio';
 import ScrollToTop from './utilities/ScrollToTop';
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
           <Route path='/home' element={<Home />} />
           <Route path='/form' element={<Form />} />
           <Route path='/story' element={<Story />} />
-          <Route path='/finish' element={<Finish />} />
+          <Route path='/bio' element={<Bio />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </AnimatePresence>

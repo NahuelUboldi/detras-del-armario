@@ -13,7 +13,7 @@ function Story() {
   return (
     <AnimatedPage>
       <Wrapper>
-        <div className='story-container px-3 px-md-5'>
+        <div className='story-container px-2 px-md-3 px-lg-5'>
           <header className='pb-2 pb-md-5'>
             <h1 className='display-1'>Detrás del Armario</h1>
             <span className='author display-5 fst-italic'>
@@ -57,19 +57,18 @@ function Story() {
               grande. Creo que por eso fuimos los primeros en ser apretujados.
             </p>
             <p>
-              Era asfixiante y a la vez nos hacía muy-arecido a un agujero negro
-              que se podía experimentar, se nos confundía hasta el aliento,
-              viciado de olor a chicles de menta y frutilla. El que se metía
-              primero terminaba siendo el más aplastado por todos contra el
-              final del pasillito. En esa posición, podía uno levantar los pies
-              y mantenerse en el aire solo por la fuerza de la compresión.
+              Era asfixiante y a la vez nos hacía muy felices. Todos los que íbamos a séptimo grado división B sabíamos lo que pasaba detrás del armario, hasta Lulo lo sabía, el chico al que siempre se le caía la baba en clase. Cuando sonaba el timbre, nos conteníamos para no abalanzarnos sobre el armario porque la maestra podía descubrir nuestro pequeño goce de apretarnos y comprimirnos hasta que entráramos la mayor cantidad posible de nosotros ahí atrás.
             </p>
-            <br />
-            <span className='author display-5 fst-italic my-3 my-md-5'>
+            <p>
+              Nos apelmazábamos a punto de fundición, hasta que no sentíamos ni las manos ni las piernas. Era lo más parecido a un agujero negro que se podía experimentar, se nos confundía hasta el aliento, viciado de olor a chicles de menta y frutilla. El que se metía primero terminaba siendo el más aplastado por todos contra el final del pasillito. En esa posición, podía uno levantar los pies y mantenerse en el aire solo por la fuerza de la compresión.
+
+
+            </p>
+
+            <div className='author display-5 fst-italic my-3 my-md-5'>
               ~ ~ ~
-            </span>
-            <br />
-            <br />
+            </div>
+
             <p>
               Como en el aula ya no quedaba ningún incauto que se metiera
               primero para recibir la avalancha de cuerpos encima suyo, tuvimos
@@ -177,8 +176,10 @@ function Story() {
               corazones se hubieran roto en forma de big bang, con la misma
               fuerza que nos apretábamos, pero en el sentido opuesto.
             </p>
+            <div className='author display-5 fst-italic my-3 my-md-5'>
+              ~ ~ ~
+            </div>
 
-            <hr className='chapter my-3 my-md-5' />
             <p>
               Se acercaba fin de año, pasaron días sin que podamos cazar nada
               valioso. Si mirábamos detrás del armario se sentía la tristeza de
