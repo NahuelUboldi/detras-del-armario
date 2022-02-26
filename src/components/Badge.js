@@ -22,6 +22,7 @@ const Badge = () => {
           href='https://antologiasitau.org/cuento-regional/detras-del-armario/'
           className='link-itau'
           target={'_blank'}
+          rel='noreferrer nofollow'
         >
           Finalista
         </a>
@@ -31,6 +32,7 @@ const Badge = () => {
           href='https://antologiasitau.org/cuento-regional/detras-del-armario/'
           className='link-itau'
           target={'_blank'}
+          rel='noreferrer nofollow'
         >
           Cuento Digital Itaú 2020
         </a>
@@ -40,6 +42,7 @@ const Badge = () => {
           href='https://antologiasitau.org/cuento-regional/detras-del-armario/'
           className='link-itau'
           target={'_blank'}
+          rel='noreferrer nofollow'
         >
           Finalista - Cuento Digital Itaú 2020
         </a>
