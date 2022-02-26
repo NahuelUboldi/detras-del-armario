@@ -23,8 +23,8 @@ const Bio = () => {
           anuncios comerciales. Entonces sus jefes le recomendaron que dejara de
           perder el tiempo con esas cosas. Ella les hizo caso: se puso a
           escribir cuentos, cursó una Maestría en Culturas y Literaturas
-          Comparadas y asistió a talleres de escritura con Pablo Natale, Martín
-          Felipe Castagnet, y Luciano Lamberti.
+          Comparadas y asistió a talleres de escritura con Pedro Mairal, Pablo
+          Natale, Martín Felipe Castagnet y Luciano Lamberti.
         </main>
         <button
           className='btn btn-primary fs-4 my-3 my-md-5'
