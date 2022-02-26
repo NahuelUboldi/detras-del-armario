@@ -20,13 +20,13 @@ const App = () => {
       <AnimatePresence exitBeforeEnter inital={'false'}>
         <Badge />
         <Routes key={location.pathname} location={location}>
-          <Route path='/' element={<Home />} />
-          <Route path='/index.html' element={<Home />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/form' element={<Form />} />
-          <Route path='/story' element={<Story />} />
-          <Route path='/bio' element={<Bio />} />
-          <Route path='*' element={<ErrorPage />} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/index.html' element={<Home />} />
+          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/form' element={<Form />} />
+          <Route exact path='/story' element={<Story />} />
+          <Route exact path='/bio' element={<Bio />} />
+          <Route exact path='*' element={<ErrorPage />} />
         </Routes>
       </AnimatePresence>
     </ScrollToTop>
