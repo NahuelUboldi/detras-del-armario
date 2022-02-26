@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from '../components/Wrapper';
 import { AnimatedPage } from '../utilities/AnimatedPage';
+import authorImg from '../img/cara-sofia-300.jpg';
 
 const Bio = () => {
   return (
@@ -8,11 +9,7 @@ const Bio = () => {
       <Wrapper>
         <header className='pb-2 pb-md-5'>
           <div>
-            <img
-              src='/img/cara-sofia-300.jpg'
-              alt=''
-              className='bio-img mb-3 mb-md-5'
-            />
+            <img src={authorImg} alt='' className='bio-img mb-3 mb-md-5' />
             <h1 className='display-1'>Sofía Contreras Canard</h1>
             <span className='author display-5 fst-italic'>~ Escritora ~</span>
           </div>

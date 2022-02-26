@@ -21,6 +21,7 @@ const App = () => {
         <Badge />
         <Routes key={location.pathname} location={location}>
           <Route path='/' element={<Home />} />
+          <Route path='/index.html' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/form' element={<Form />} />
           <Route path='/story' element={<Story />} />

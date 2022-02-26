@@ -1,19 +1,10 @@
 @import-normalize;
 
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Oswald:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Cormorant+Garamond&display=swap');
 :root {
-  --font-primary: 'Open Sans', sans-serif;
-  --font-secondary: 'Poiret One', cursive;
-  --font-headings: 'Fredericka the Great', cursive;
-  --font-lora: 'Lora', serif;
   --font-cardo: 'Cardo', 'Cormorant Garamond', serif;
-  --font-oswald: 'Oswald', sans-serif;
-  --font-alegreya: 'Alegreya', serif;
+
   --color-bg: #fff;
   --color-black: #444444;
   --color-light-black: #888;
