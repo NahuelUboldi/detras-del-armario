@@ -27,8 +27,6 @@ You can visit the live web app following this [link](https://sofiacanard.com/cue
 - React Router
 - React to print
 - React icons
-- Framer Motion
-- Framer Motion
 
 [Back To The Top](#read-me-template)
 
@@ -43,8 +41,8 @@ You can visit the live web app following this [link](https://sofiacanard.com/cue
 ---
 
 ## Author Info
-
-- Linkedin - [Nahuel Uboldi](https://www.linkedin.com/in/nahuel-uboldi-15845ba6/)
-- Github - [Nahuel Uboldi](https://github.com/NahuelUboldi)
+Nahuel Uboldi
+- [Linkedin](https://www.linkedin.com/in/nahuel-uboldi-15845ba6/)
+- [Github](https://github.com/NahuelUboldi)
 
 [Back To The Top](#read-me-template)
