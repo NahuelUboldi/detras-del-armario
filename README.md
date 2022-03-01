@@ -24,6 +24,7 @@ You can visit the live web app following this [link](https://sofiacanard.com/cue
 
 - React
 - Framer Motion
+- Bootstrap
 - React Router
 - React to print
 - React icons
