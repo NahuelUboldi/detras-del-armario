@@ -14,9 +14,11 @@
 
 ## Description
 
-This is React app made in colaboration with the argentinian writer Sofía Contreras Canard. It was one of the 40 finalist of over 4500 participants in the 2020 Digital Stories Contest by Itaú Fundation. It has also been declared a initiative of cultural interest by the city council of Anisacate in 2021.
+This is a React app made in colaboration with the argentinian writer Sofía Contreras Canard.
 
-The app recreates a story writed by Sofía using data provided by the user in an interactive way.
+The app was selected as one of the 40 finalists of over 4500 participants in the 2020 Digital Stories Contest by Itaú Foundation. It has also been declared an initiative of cultural interest by the city council of Anisacate in 2021.
+
+It recreates a story written by Sofía utilizing data interactively provided by the user.
 
 You can visit the live web app following this [link](https://sofiacanard.com/cuentodigital/)
 
