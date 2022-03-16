@@ -1,6 +1,6 @@
 # Detrás del armario
 
-![Project Image](https://sofiacanard.com/recursos/detras-del-armario.png)
+![Project Image](https://nahueluboldi.com/img/proyects/detras-del-armario/all-devices.png)
 
 ---
 
